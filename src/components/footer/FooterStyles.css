@@ -1,0 +1,82 @@
+/* FooterStyles.css */
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.top {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Ensure top alignment initially */
+    flex-wrap: wrap;
+}
+
+.center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.center ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.center ul li {
+    padding: 5px;
+    margin: 0 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.center ul li:not(:first-child)::before {
+    content: '•';
+    margin-right: 10px; /* Space between bullet and text */
+    color: #333;
+    font-size: 16px; /* Adjust to match text size */
+    line-height: 1; /* Ensures bullet is vertically centered */
+}
+
+.contact {
+    flex: 1;
+    text-align: center;
+}
+
+.contact h4 {
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #007BFF; /* Change this to your desired hover color */
+}
